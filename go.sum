@@ -1,3 +1,5 @@
+github.com/ChainSafe/go-schnorrkel v0.0.0-20210222182958-bd440c890782 h1:lwmjzta2Xu+3rPVY/VeNQj2xfNkyih4CwyRxYg3cpRQ=
+github.com/ChainSafe/go-schnorrkel v0.0.0-20210222182958-bd440c890782/go.mod h1:URdX5+vg25ts3aCh8H5IFZybJYKWhJHYMTnf+ULtoC4=
 github.com/ChainSafe/go-schnorrkel v1.0.0 h1:3aDA67lAykLaG1y3AOjs88dMxC88PgUuHRrLeDnvGIM=
 github.com/ChainSafe/go-schnorrkel v1.0.0/go.mod h1:dpzHYVxLZcp8pjlV+O+UR8K0Hp/z7vcchBSbMBEhCw4=
 github.com/cosmos/go-bip39 v0.0.0-20180819234021-555e2067c45d h1:49RLWk1j44Xu4fjHb6JFYmeUnDORVwHNkDxaQ0ctCVU=

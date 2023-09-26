@@ -3,7 +3,7 @@ module github.com/itering/substrate-api-rpc
 go 1.16
 
 require (
-	github.com/ChainSafe/go-schnorrkel v1.0.0
+	github.com/ChainSafe/go-schnorrkel v0.0.0-20210222182958-bd440c890782 // indirect
 	github.com/gorilla/websocket v1.4.2
 	github.com/huandu/xstrings v1.4.0 // indirect
 	github.com/itering/scale.go v1.7.1

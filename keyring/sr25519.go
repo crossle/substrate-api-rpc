@@ -191,10 +191,7 @@ func (k *Sr25519PublicKey) Verify(msg, sig []byte) bool {
 	}
 
 	t := sr25519.NewSigningContext(SigningContext, msg)
-	result, err := k.key.Verify(s, t)
-	if err != nil {
-		return false
-	}
+	result := k.key.Verify(s, t)
 	return result
 }
 
@@ -223,14 +220,6 @@ func (k *Sr25519PublicKey) Decode(in []byte) error {
 // NewSr25519FromSeed from Secret seed to SecretKey
 func NewSr25519FromSeed(seed []byte) (*Sr25519Keypair, error) {
 	switch len(seed) {
-	case sr25519.MiniSecretKeySize:
-		var mss [32]byte
-		copy(mss[:], seed)
-		ms, err := sr25519.NewMiniSecretKeyFromRaw(mss)
-		if err != nil {
-			return nil, err
-		}
-		return NewSr25519Keypair(ms.ExpandEd25519())
 	case SecretKeySize:
 		var key, nonce [32]byte
 		copy(key[:], seed[0:32])
